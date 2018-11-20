@@ -1,0 +1,36 @@
+Scanning dependencies of target nucleusAnimation
+[  7%] Building CXX object CMakeFiles/nucleusAnimation.dir/nucleusAnimation.cpp.o
+/home/bharath/sartre/examples/nucleusAnimation.cpp: In function ‘void pressKey(int, int, int)’:
+/home/bharath/sartre/examples/nucleusAnimation.cpp:138:28: warning: parameter ‘xx’ set but not used [-Wunused-but-set-parameter]
+ void pressKey(int key, int xx, int yy) {
+                            ^
+/home/bharath/sartre/examples/nucleusAnimation.cpp: In function ‘void releaseKey(int, int, int)’:
+/home/bharath/sartre/examples/nucleusAnimation.cpp:157:30: warning: parameter ‘x’ set but not used [-Wunused-but-set-parameter]
+ void releaseKey(int key, int x, int y) {
+                              ^
+[ 14%] Linking CXX executable nucleusAnimation
+[ 14%] Built target nucleusAnimation
+Scanning dependencies of target lambdaGeneratorMain
+[ 21%] Building CXX object CMakeFiles/lambdaGeneratorMain.dir/lambdaGeneratorMain.cpp.o
+[ 28%] Linking CXX executable lambdaGeneratorMain
+[ 28%] Built target lambdaGeneratorMain
+Scanning dependencies of target tableGeneratorMain
+[ 35%] Building CXX object CMakeFiles/tableGeneratorMain.dir/tableGeneratorMain.cpp.o
+[ 42%] Linking CXX executable tableGeneratorMain
+[ 42%] Built target tableGeneratorMain
+Scanning dependencies of target createBSatBDependenceTable
+[ 50%] Building CXX object CMakeFiles/createBSatBDependenceTable.dir/createBSatBDependenceTable.cpp.o
+[ 57%] Linking CXX executable createBSatBDependenceTable
+[ 57%] Built target createBSatBDependenceTable
+Scanning dependencies of target heraCompare
+[ 64%] Building CXX object CMakeFiles/heraCompare.dir/heraCompare.cpp.o
+[ 71%] Linking CXX executable heraCompare
+/home/bharath/sartre/build/sartre/lib/libsartre.a(Sartre.cpp.o): In function `Sartre::init(char const*)':
+/home/bharath/sartre/src/Sartre.cpp:485: undefined reference to `TUnuran::Init(TUnuranMultiContDist const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+collect2: error: ld returned 1 exit status
+CMakeFiles/heraCompare.dir/build.make:92: recipe for target 'heraCompare' failed
+make[2]: *** [heraCompare] Error 1
+CMakeFiles/Makefile2:220: recipe for target 'CMakeFiles/heraCompare.dir/all' failed
+make[1]: *** [CMakeFiles/heraCompare.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
